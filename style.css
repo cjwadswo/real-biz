@@ -111,6 +111,7 @@ li {
     gap: 2em;
     /* max-width: 120px; */
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -136,7 +137,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-grow: 1;
+    flex-wrap: wrap;
+    
 }
 
 .descr {
@@ -186,6 +188,7 @@ li {
     justify-content: center;
     align-items: center;
     background-color: #3882F6;
+   
 }
 .card {
    
@@ -196,6 +199,7 @@ li {
     /* align-items: center; */
     justify-content: center;
     padding-left: 2em;
+    
 }
 
 .card-text {
@@ -211,4 +215,18 @@ li {
     border-color: white;
     border:solid;
     border-width:medium;
+}
+
+.footer-container {
+    background-color: #1F2937;
+    color: white;
+   
+    
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
 }
