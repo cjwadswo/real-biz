@@ -1,11 +1,12 @@
 body {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     margin:0;
     padding:0;
     /* width: 100vw; */
     justify-content: center;
     align-items: center;
+    /* flex-grow:1; */
 }
 
 /* Header */
@@ -35,8 +36,10 @@ li {
     justify-content: space-around;
     align-items: center;
     color: #F9FAF8;
-    padding: 16px;
-    width: 100vw;
+    /* padding: 16px; */
+    padding-top:16px;
+    padding-bottom: 16px;
+    /* width: 100vw; */
 }
 
 .header-logo {
@@ -50,16 +53,12 @@ li {
     background-color: #1f2937;
     justify-content: center;
     align-items: center;
-    padding:16px 9em 5em;
-    height: 240px;
-    width: 100vw;
+    padding: 60px;
 }
 .hero-text{
     display: flex;
-    /* flex:1; */
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     color: #F9FAF8;
     width:375px;
     padding-right: 16px;
@@ -79,7 +78,6 @@ li {
 
 .sign-up-button button {
     background-color: #3882f6;
-    /* padding: 16px; */
     border: none;
     border-radius:  6px;
     color: white;
@@ -105,13 +103,13 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5em;
+    padding: 6em;
 }
 
 .image-content {   
     display: flex;
     gap: 2em;
-    max-width: 120px;
+    /* max-width: 120px; */
     justify-content: center;
 
 }
@@ -127,36 +125,39 @@ li {
 
 .img-border {
     display: flex;
-    height: 120px;
-    width: 120px;
+    height: 200px;
+    width: 200px;
     border: #3882F6;
     border-style: groove;
     border-radius:  10px;
 }
 
-.desc {
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.descr {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align:center;
+    width: 200px
+
 }
 
 .quote-section{
-    background-color: #E5E7EB;
-    /* width: 100vw; */
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    flex-shrink: 0;
 }
 .quote-container {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    height: 300px;
-    width: 100vw;
     justify-content: center;
     align-items: center;
+    padding: 60px;
 }
 .quote  {
     display: flex;
@@ -169,4 +170,45 @@ li {
 .quote-name {
     align-self: flex-end;
     font-weight: bold;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+.card-container {
+    display:flex;
+    padding: 30px;
+    width: 700px;
+    border: none;
+    border-radius:  6px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+}
+.card {
+   
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    color: white;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 2em;
+}
+
+.card-text {
+    font-size: 28px;
+    font-weight: bolder;
+}
+.card-subtext{
+    font-size 26px;
+    font-weight: bold;
+}
+.card-container .sign-up-button button{
+    /* padding: 36px; */
+    border-color: white;
+    border:solid;
+    border-width:medium;
 }
